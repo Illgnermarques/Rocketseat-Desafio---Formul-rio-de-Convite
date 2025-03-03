@@ -1,0 +1,40 @@
+.radio-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    
+}
+
+.radio-inner {
+    border-radius: 0.5rem;
+    display: grid;
+    position: relative;
+    gap: 0.5rem;
+    padding: 4px 4px 8px 4px;
+    background: var(--shape-button-color);
+    width: 8.375rem;
+    text-align: center;
+    
+    
+    
+    
+    & input {
+        all: unset;
+        position: absolute;
+        inset: 0;
+
+
+    }
+
+    &:hover, &:focus-within {
+        outline: 2px solid var(--brand-color-light);
+        background: var(--shape-hover-color);
+    }
+
+
+}
+
+
+
+
+

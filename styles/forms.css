@@ -1,16 +1,46 @@
-form {
-    margin-top: 1.5rem;
-}
-
 fieldset {
-    display: grid;
     border: none;
     
-    gap: 1rem;
 }
 
-input {
-    
+.flex {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.title {
+    width: 35rem;
     
 }
+
+.person {
+    margin-top: 3rem;
+}
+
+
+.botao {
+    gap: 1rem;
+    display: flex;
+    padding: 6px;
+    margin-bottom: 1.75rem;
+
+    & input {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 2px solid var(--shape-button-color);
+        border-radius: 62rem;
+    }
+
+   
+
+}
+
+
+
+
+
+
+
 

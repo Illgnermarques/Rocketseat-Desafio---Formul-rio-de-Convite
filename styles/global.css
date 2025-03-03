@@ -5,8 +5,8 @@
 }
 
 :root {
-    --font-family:'Leckerli One', sans-serif;
-    --title: 400 40px/normal var(--font-family);
+    --font-logo:'Leckerli One', sans-serif;
+    --logo: 400 40px/normal var(--font-logo);
 
     --font-family:'Baloo 2', sans-serif;
     --head-md: 700 28px/normal var(--font-family);
@@ -28,6 +28,7 @@
     --accent-color-purple: #B259FF;
     --accent-color-fuschia: #FF59F9;
     --accent-color-pink: #FF598B;
+    --accent-color-danger: #FF5959;
     --accent-color-orange: #FF8B59;
     --accent-color-yellow: #FFCD59;
     --accent-color-lime: #E1FF59;
@@ -52,16 +53,55 @@
 
 body {
     overflow: hidden;
+    background-color: var(--shape-background);
+    color: var(--text-body);
 }
 
-.flex {
-    display: flex;
+.light {
+    background-color: var(--brand-color-light);
 }
 
-.flex-1 {
-    flex: 1
+.navy {
+    background-color: var(--accent-color-navy);
 }
 
-.flex {
-    flex:2
+.purple {
+    background-color: var(--accent-color-purple);
 }
+
+.fuschia {
+    background-color: var(--accent-color-fuschia);
+}
+
+.pink {
+    background-color: var(--accent-color-pink);
+}
+
+.danger {
+    background-color: var(--accent-color-danger);
+}
+
+.orange {
+    background-color: var(--accent-color-orange);
+}
+
+.yellow {
+    background-color: var(--accent-color-yellow);
+}
+
+.lime {
+    background-color: var(--accent-color-lime);
+}
+
+.green {
+    background-color: var(--accent-color-green);
+}
+
+.cyan {
+    background-color: var(--accent-color-cyan);
+}
+
+
+
+
+

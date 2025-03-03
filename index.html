@@ -26,63 +26,160 @@
 <body>
     <div id="app">
         <aside>
-            <div class="aside">
+            <div class="aside-container">
                 <img src="assets/Logo.svg" alt="">
-                <h2>Festivite</h2>
-                <p>Crie um convite digital para seu evento</p>
-                
-                
+                <h1>Festivite</h1>
+                <h2>Crie um convite digital para seu evento</h2>
             </div>
         </aside>
 
         <main>
             <div class="principal">
-                <h2>Crie seu convite</h2>
+                <h1>Crie seu convite</h1>
                 <img src="assets/icons/calendar.svg" alt="">
-                <h3>Sobre o evento</h3>
-                
+                <h2>Sobre o evento</h2>
 
-                <form action="">
+                <form>
                     <fieldset>
-                        
-                        <div class="input-wrapper title">
-                            <label for="">Título</label>
-                            <input type="text" placeholder="Nome do evento">
-                         </div>
 
-                            <div class="flex">
-                                <div class="input-wrapper flex-2">
-                                    <label for="">Início</label>
-                                    <input type="date" id="data" lang="pt-BR">
-                                </div>
+                        <div>
+                            <label for="">Título</label> 
+                            <input type="text" name="name" id="name" class="title" placeholder="Nome do evento" required>
+                            <div class="error">
+                                <img src="assets/icons/circle-alert.svg" alt="ícone de alerta vermelho">
+                                <span>Error message</span>
+                            </div>
+                        </div>
 
-                                <div class="input-wrapper flex-1">
-                                    <label for="">Fim</label>
-                                    <input type="date" id="data" lang="pt-BR">
-                                </div>
+                        <div class="flex">
+
+                            <div>
+                                <label for="">Início</label> 
+                                <input type="datetime-local" >
+
+                                <label for="">Tipo</label>
+                                <select name="" id="">
+                                    <option value="">Presencial</option>
+                                    <option value="">Online</option>
+                                </select>
                             </div>
 
-                            <div class="flex">
-                                <div class="input-wrapper flex-2">
-                                    <label for="">Tipo</label>
-                                    <select name="" id="">
-                                        <option value="">Presencial</option>
-                                        <option value="">Online</option>
-                                    </select>
+                            <div>
+                                <label for="">Fim</label> 
+                                <input type="datetime-local">
+
+                                <label for="">Local</label>
+                                <input type="text" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="">Descrição</label>
+                            <textarea name="" id="" rows="10" cols="30" placeholder="Escreva os detalhes do evento" required></textarea>
+                            <div class="error">
+                                <img src="assets/icons/circle-alert.svg" alt="ícone de alerta vermelho">
+                                <span>Error message</span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="person">
+
+                        <img src="assets/icons/paintbrush-vertical.svg" alt="">
+                        <h2>Personalização</h2>
+                        <label for="">Cor principal</label>
+                        <div class="botao">
+                            <input type="" class="light"></input>
+                            <input type="" class="navy"></input>
+                            <input type="" class="purple"></input>
+                            <input type="" class="fuschia"></input>
+                            <input type="" class="pink"></input>
+                            <input type="" class="danger"></input>
+                            <input type="" class="orange"></input>
+                            <input type="" class="yellow"></input>
+                            <input type="" class="lime"></input>
+                            <input type="" class="green"></input>
+                            <input type="" class="cyan"></input>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label>Tema do evento</label>
+
+                            <div class="radio-wrapper">
+                                <div>
+                                    <div class="radio-inner">
+                                        <input type="radio" name="birthday" value="niver" id="niver">
+                                        <img src="assets/images/aniversário.svg" alt="">
+                                        <label for="morning">Aniversário</label>
+                                    </div>
                                 </div>
 
-                                <div class="input-wrapper flex-1">
-                                    <label for="">Local</label>
-                                    <input type="url" id="local" placeholder="Link ou endereço">
+                                <div class="radio-inner">
+                                    <input type="radio" name="child" value="criança" id="criança">
+                                    <img src="assets/images/infantil.svg" alt="">
+                                    <label for="morning">Infantil</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="graduation" value="formatura" id="formatura">
+                                    <img src="assets/images/formatura.svg" alt="">
+                                    <label for="morning">Formatura</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="marriage" value="casamento" id="casamento">
+                                    <img src="assets/images/casamento.svg" alt="">
+                                    <label for="morning">Casamento</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="baby party" value="cha de bebe" id="cha de bebe">
+                                    <img src="assets/images/chá de bebê.svg" alt="">
+                                    <label for="morning">Chá de bebê</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="bridal-shower" value="cha de panela" id="cha de panela">
+                                    <img src="assets/images/chá de panela.svg" alt="">
+                                    <label for="morning">Chá de panela</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="carnival" value="carnaval" id="carnaval">
+                                    <img src="assets/images/carnaval.svg" alt="">
+                                    <label for="morning">Carnaval</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="easteregg" value="pascoa" id="pascoa">
+                                    <img src="assets/images/páscoa.svg" alt="">
+                                    <label for="morning">Páscoa</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="joao" value="sao joao" id="sao joao">
+                                    <img src="assets/images/são joão.svg" alt="">
+                                    <label for="morning">São João</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="halloween" value="bruxas" id="bruxas">
+                                    <img src="assets/images/halloween.svg" alt="">
+                                    <label for="morning">Halloween</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="christmas" value="natal" id="natal">
+                                    <img src="assets/images/natal.svg" alt="">
+                                    <label for="morning">Natal</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" name="other" value="outro" id="outro">
+                                    <img src="assets/images/outro.svg" alt="">
+                                    <label for="morning">Outro</label>
                                 </div>
                             </div>
-
-                            <div class="textarea-wrapper">
-                                <label for="description">Descrição</label>
-                                <textarea name="descrição" id="descrição" cols="30" rows="10" placeholder="Escreva os detalhes sobre o evento"></textarea>
-                            </div>
-
-
                     </fieldset>
                 </form>
             </div>
