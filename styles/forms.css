@@ -25,16 +25,36 @@ fieldset {
     display: flex;
     padding: 6px;
     margin-bottom: 1.75rem;
+    cursor: pointer;
 
     & input {
         width: 2.5rem;
         height: 2.5rem;
         border: 2px solid var(--shape-button-color);
         border-radius: 62rem;
+        cursor: pointer;
+        
+
+        &:hover, &:focus-within {
+            outline: 2px solid var(--brand-color-light);
+            
+        }
+
+        &:has(input:focus) {
+            border-color: var(--brand-color-light);
+            background-color: var(--brand-color-light);
+        }
     }
 
-   
+    
 
+    
+
+}
+
+.checagem {
+    display: flex;
+    margin-top: 1.75rem;
 }
 
 
