@@ -15,7 +15,10 @@
     width: 8.375rem;
     text-align: center;
     
-    
+    & img {
+        width: 100%;
+        margin: 0;
+    }
     
     
     & input {
